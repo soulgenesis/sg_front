@@ -9,7 +9,7 @@
         @apply font-vertigo text-5xl sm:text-7xl lg:text-8xl;
     }
     .subheading {
-        @apply font-vertigo text-3xl sm:text-5xl;
+        @apply font-vertigo text-3xl sm:text-5xl text-gray-dark;
     }
     .para {
         @apply text-sm text-gray;
