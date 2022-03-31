@@ -1,14 +1,12 @@
 <script>
 	import { onMount } from 'svelte';
-	import { gsap } from 'gsap/dist/gsap';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	import { gsap } from 'gsap/dist/gsap.js';
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger.js';
 	import { browser } from '$app/env';
 
 	gsap.registerPlugin(ScrollTrigger);
 
 	let pics = [];
-	let w;
-	let amount = 64;
 
 	const fetchPics = async () => {
 		if (browser && window.innerWidth > 1023) {
@@ -40,20 +38,8 @@
 		});
 
 		tl.call(fetchPics).from('.stag', { duration: 1 });
-
-		// if (browser && window.innerWidth > 1023) {
-		// 	amount = 200;
-		// }
 	});
-
-	// $: {
-	// 	if (amount !== 200 && w > 1023) {
-	// 		refetch();
-	// 	}
-	// }
 </script>
-
-<svelte:window bind:innerWidth={w} />
 
 <div id="changeable" class="grid grid-cols-12 mt-28">
 	<h2 class="subheading col-start-5 col-span-full sm:col-start-1 sm:pl-4 lg:col-start-4 lg:ml-16">
