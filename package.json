@@ -30,6 +30,7 @@
   },
   "type": "module",
   "dependencies": {
-    "gsap": "^3.9.1"
+    "gsap": "^3.9.1",
+    "svelte-web3": "^3.3.8"
   }
 }

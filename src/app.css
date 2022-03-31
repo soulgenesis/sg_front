@@ -4,8 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .heading {
+        @apply font-vertigo text-5xl sm:text-7xl lg:text-8xl;
+    }
+    .subheading {
+        @apply font-vertigo text-3xl sm:text-5xl;
+    }
+    .para {
+        @apply text-sm text-gray;
+    }
+}
 
 @font-face {
     font-family: vertigo;
     src: url(./fonts/VertigoRegular.woff);
 }
+
+
