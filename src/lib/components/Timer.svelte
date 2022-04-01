@@ -1,3 +1,6 @@
+<script>
+    import { timer } from "$lib/functions/timer"
+</script>
 <div class="text-gray text-xl lg:text-3xl font-medium">
-    22.04.22, 20:00 (NYC)
+    {$timer}
 </div>
