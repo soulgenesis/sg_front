@@ -11,8 +11,8 @@
 	import Nav from '$lib/components/Nav.svelte';
 </script>
 
-<!-- <Nav />
-<Main /> -->
+<Nav />
+<Main />
 <MintButton />
 <About />
 <Features />
