@@ -17,7 +17,30 @@
 		<p class="mt-5">We are proud to say that no one has<br class="sm:hidden"> done<br class="hidden sm:inline"> it before!</p>
 	</div>
 
-	<div class="bg-green-200 mt-9 col-span-full col-start-7 h-44 w-44 sm:col-start-1 sm:row-start-1 sm:mt-0 md:row-start-2 md:mt-28"></div>
+	<div class="col-span-full mt-9 flex flex-col md:flex-row md:gap-20 md:mt-28 lg:col-start-3 lg:gap-28 2xl:col-start-4">
+		<div class="w-5/12 md:w-1/3 self-end max-w-xs">
+			<img class="w-full" src="/img/guests/1.jpg" alt="">
+			<div class="flex space-x-3 items-center mt-6">
+				<img class="w-10 h-10 rounded-full" loading="lazy" src="https://pbs.twimg.com/profile_images/1395724882059698179/puwXO32p_bigger.jpg" alt="">
+				<a class="text-red para hover:text-mint transition duration-300" target="_blank" href="https://twitter.com/Dan_Orsini">@Dan_Orsini</a>
+			</div>
+		</div>
+		<div class="w-5/12 md:w-1/3 max-w-xs">
+			<img class="w-full" src="/img/guests/2.jpg" alt="">
+			<div class="flex space-x-3 items-center mt-6">
+				<img class="w-10 h-10 rounded-full" loading="lazy" src="https://pbs.twimg.com/profile_images/1504543426309730309/bb3RmLg9_bigger.jpg" alt="">
+				<a class="text-red para hover:text-mint transition duration-300" target="_blank" href="https://twitter.com/bloomingvisions">@bloomingvisions</a>
+			</div>
+		</div>
+		<div class="w-5/12 md:w-1/3 self-end max-w-xs">
+			<img class="w-full" src="/img/guests/3.jpg" alt="">
+			<div class="flex space-x-3 items-center mt-6">
+				<img class="w-10 h-10 rounded-full" loading="lazy" src="https://pbs.twimg.com/profile_images/1480093232486707204/fhmmdf-P_bigger.jpg" alt="">
+				<a class="text-red para hover:text-mint transition duration-300" target="_blank" href="https://twitter.com/YodchatTinyline">@YodchatTinyline</a>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="bg-green-200 mt-9 col-span-full col-start-7 h-44 w-44 sm:col-start-1 sm:row-start-1 sm:mt-0 md:row-start-2 md:mt-28"></div>
 	<div class="bg-pink-400 mt-9 col-span-full col-start-1 h-44 w-44 sm:mt-14 sm:col-start-1 sm:row-start-2 md:mt-28 md:col-start-6"></div>
-	<div class="bg-indigo-600 mt-9 col-span-full col-start-6 h-44 w-44 sm:mt-14 sm:col-start-7 sm:row-start-2 md:mt-28 md:col-start-10"></div>
+	<div class="bg-indigo-600 mt-9 col-span-full col-start-6 h-44 w-44 sm:mt-14 sm:col-start-7 sm:row-start-2 md:mt-28 md:col-start-10"></div> -->
 </div>
