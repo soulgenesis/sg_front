@@ -15,43 +15,43 @@
 	onMount(() => {
 		const tl = gsap.timeline();
 
-        tl
-			.to('#bg-1', { duration: 5, yPercent: -15, ease: 'none' })
-			.from('.stag1', { opacity: 0, stagger: 0.5, scale: 1.05, ease: 'in' }, '-=5')
-
-			.from('#bg-2', { duration: 2, yPercent: 100, ease: 'power4.out' })
-
-			.to('#bg-2', { duration: 5, y: -150, ease: 'none'}, '-=1')
-			.from('.stag2', { opacity: 0, stagger: 0.5, scale: 1.05, ease: 'in' }, '-=5')
-
-			.from('#bg-3', { duration: 2, yPercent: 100, ease: 'power4.out' })
-
-			.to('#bg-3', { duration: 5, y: -150, ease: 'none' }, '-=1')
-			.from('.stag3', { opacity: 0, stagger: 0.5, scale: 1.05, ease: 'in' }, '-=5')
-
-            .from('#bg-4', { duration: 2, yPercent: 100, ease: 'power4.out' })
-
-			.to('#bg-4', { duration: 5, y: -150, ease: 'none' }, '-=1')
-			.from('.stag4', { opacity: 0, stagger: 0.5, scale: 1.05, ease: 'in' }, '-=5')
-
         // tl
-        //     .to('#bg-1', { duration: 5, yPercent: -15, ease: 'none' })
+		// 	.to('#bg-1', { duration: 5, yPercent: -15, ease: 'none' })
 		// 	.from('.stag1', { opacity: 0, stagger: 0.5, scale: 1.05, ease: 'in' }, '-=5')
 
-		// 	.from('#bg-2', { duration: 2, opacity: 0, yPercent: 2, ease: 'expo.out' }, '-=2')
+		// 	.from('#bg-2', { duration: 2, yPercent: 100, ease: 'power4.out' })
 
-		// 	.to('#bg-2', { duration: 8, yPercent: -15, ease: 'none' }, '-=2')
-		// 	.from('.stag2', { opacity: 0, stagger: 0.7, scale: 1.05, ease: 'in' }, '-=8')
+		// 	.to('#bg-2', { duration: 5, y: -150, ease: 'none'}, '-=1')
+		// 	.from('.stag2', { opacity: 0, stagger: 0.5, scale: 1.05, ease: 'in' }, '-=5')
 
-		// 	.from('#bg-3', { duration: 2, opacity: 0, yPercent: 2, ease: 'expo.out' }, '-=2')
+		// 	.from('#bg-3', { duration: 2, yPercent: 100, ease: 'power4.out' })
 
-		// 	.to('#bg-3', { duration: 8, yPercent: -15, ease: 'none' }, '-=2')
-		// 	.from('.stag3', { opacity: 0, stagger: 0.7, scale: 1.05, ease: 'in' }, '-=8')
+		// 	.to('#bg-3', { duration: 5, y: -150, ease: 'none' }, '-=1')
+		// 	.from('.stag3', { opacity: 0, stagger: 0.5, scale: 1.05, ease: 'in' }, '-=5')
 
-		// 	.from('#bg-4', { duration: 2, opacity: 0, yPercent: 2, ease: 'expo.out' }, '-=2')
+        //     .from('#bg-4', { duration: 2, yPercent: 100, ease: 'power4.out' })
 
-		// 	.to('#bg-4', { duration: 8, yPercent: -15, ease: 'none' }, '-=2')
-		// 	.from('.stag4', { opacity: 0, stagger: 0.7, scale: 1.05, ease: 'in' }, '-=8')
+		// 	.to('#bg-4', { duration: 5, y: -150, ease: 'none' }, '-=1')
+		// 	.from('.stag4', { opacity: 0, stagger: 0.5, scale: 1.05, ease: 'in' }, '-=5')
+
+        tl
+            .to('#bg-1', { duration: 5, yPercent: -15, ease: 'none' })
+			.from('.stag1', { opacity: 0, stagger: 0.5, scale: 1.05, ease: 'in' }, '-=5')
+
+			.from('#bg-2', { duration: 2, opacity: 0,  ease: 'expo.out' }, '-=2')
+
+			.to('#bg-2', { duration: 8, yPercent: -15, ease: 'none' }, '-=2')
+			.from('.stag2', { opacity: 0, stagger: 0.7, scale: 1.05, ease: 'in' }, '-=8')
+
+			.from('#bg-3', { duration: 2, opacity: 0, yPercent: 2, ease: 'expo.out' }, '-=2')
+
+			.to('#bg-3', { duration: 8, yPercent: -15, ease: 'none' }, '-=2')
+			.from('.stag3', { opacity: 0, stagger: 0.7, scale: 1.05, ease: 'in' }, '-=8')
+
+			.from('#bg-4', { duration: 2, opacity: 0, yPercent: 2, ease: 'expo.out' }, '-=2')
+
+			.to('#bg-4', { duration: 8, yPercent: -15, ease: 'none' }, '-=2')
+			.from('.stag4', { opacity: 0, stagger: 0.7, scale: 1.05, ease: 'in' }, '-=8')
 
 
 	});
