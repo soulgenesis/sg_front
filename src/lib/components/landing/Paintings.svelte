@@ -15,7 +15,7 @@
 
     </div>
 
-	<div class="hidden lg:inline-block bg-sky h-80 mt-9 lg:col-start-9 lg:row-start-1 col-span-full ml-6 xl:col-start-8 xl:ml-20">
+	<div class="hidden lg:inline-block bg-sky-pink h-80 mt-9 lg:col-start-9 lg:row-start-1 col-span-full ml-6 xl:col-start-8 xl:ml-20">
 
     </div>
 </div>

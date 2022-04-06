@@ -3,6 +3,7 @@
 	import Analog from '$lib/components/landing/Analog.svelte';
 	import Changeable from '$lib/components/landing/Changeable.svelte';
 	import Features from '$lib/components/landing/Features.svelte';
+	import Footer from '$lib/components/landing/Footer.svelte';
 	import Guests from '$lib/components/landing/Guests.svelte';
 	import HowItWorks from '$lib/components/landing/HowItWorks.svelte';
 	import Main from '$lib/components/landing/Main.svelte';
@@ -25,5 +26,5 @@
 <Guests />
 <Soulmates />
 <Team />
+<Footer />
 
-<div class="h-screen" />

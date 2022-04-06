@@ -15,6 +15,7 @@ module.exports = {
       },
       backgroundImage: {
         'sky': "url('/img/bg/desktop-bg-1.jpg')",
+        'sky-pink': "url('/img/bg/desktop-bg-2.jpg')",
       }
     },
   },
