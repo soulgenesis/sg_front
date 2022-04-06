@@ -8,6 +8,8 @@
 	import Main from '$lib/components/landing/Main.svelte';
 	import MintButton from '$lib/components/landing/MintButton.svelte';
 	import Paintings from '$lib/components/landing/Paintings.svelte';
+	import Soulmates from '$lib/components/landing/Soulmates.svelte';
+	import Team from '$lib/components/landing/Team.svelte';
 	import Nav from '$lib/components/Nav.svelte';
 </script>
 
@@ -21,5 +23,7 @@
 <Paintings />
 <Analog />
 <Guests />
+<Soulmates />
+<Team />
 
 <div class="h-screen" />
