@@ -9,10 +9,10 @@
 		class="col-start-2 flex space-x-7 col-span-3 sm:mt-28 sm:ml-16 md:col-start-5 md:col-end-7 md:ml-0 lg:col-start-6"
 	>
 		<a class="self-center mb-1.5" href="/">
-			<img src="/img/icons/twitter.svg" alt="" />
+			<img loading="lazy" src="/img/icons/twitter.svg" alt="" />
 		</a>
 		<a class="self-center mb-1.5" href="/">
-			<img src="/img/icons/discord.svg" alt="" />
+			<img loading="lazy" src="/img/icons/discord.svg" alt="" />
 		</a>
 	</div>
 	<h2
@@ -56,10 +56,10 @@
 		class="col-start-2 flex space-x-7 col-span-3 sm:mt-28 sm:ml-16 md:col-start-5 md:col-end-7 md:ml-0 lg:col-start-6"
 	>
 		<a class="self-center mb-1.5" href="/">
-			<img src="/img/icons/twitter.svg" alt="" />
+			<img loading="lazy" src="/img/icons/twitter.svg" alt="" />
 		</a>
 		<a class="self-center mb-1.5" href="/">
-			<img src="/img/icons/discord.svg" alt="" />
+			<img loading="lazy" src="/img/icons/discord.svg" alt="" />
 		</a>
 	</div>
 	<h2

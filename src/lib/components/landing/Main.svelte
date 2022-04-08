@@ -3,19 +3,26 @@
 	import { onMount } from 'svelte';
 
 	let images = [
-		'/img/elements/Stage 1/',
+		// '/img/elements/Stage 1/',
 		'/img/elements/Stage 2/',
 		'/img/elements/Stage 3/',
-		"/img/elements/Stage 4/",
+		'/img/elements/Stage 4/'
 		// "/img/elements/Stage 5/",
 	];
 
 	let elements = [1, 2, 3, 4, 5, 6, 7, 8];
 
 	onMount(() => {
+		setTimeout(() => {
+			// removes the data-src attribute to avoid FOUC
+			document.querySelectorAll('img[data-src]').forEach((img) => {
+				img.setAttribute('src', img.getAttribute('data-src'));
+				img.removeAttribute('data-src');
+			});
+		}, 4000);
 		const tl = gsap.timeline();
 
-        // tl
+		// tl
 		// 	.to('#bg-1', { duration: 5, yPercent: -15, ease: 'none' })
 		// 	.from('.stag1', { opacity: 0, stagger: 0.5, scale: 1.05, ease: 'in' }, '-=5')
 
@@ -29,55 +36,65 @@
 		// 	.to('#bg-3', { duration: 5, y: -150, ease: 'none' }, '-=1')
 		// 	.from('.stag3', { opacity: 0, stagger: 0.5, scale: 1.05, ease: 'in' }, '-=5')
 
-        //     .from('#bg-4', { duration: 2, yPercent: 100, ease: 'power4.out' })
+		//     .from('#bg-4', { duration: 2, yPercent: 100, ease: 'power4.out' })
 
 		// 	.to('#bg-4', { duration: 5, y: -150, ease: 'none' }, '-=1')
 		// 	.from('.stag4', { opacity: 0, stagger: 0.5, scale: 1.05, ease: 'in' }, '-=5')
 
-        tl
-            .to('#bg-1', { duration: 5, yPercent: -15, ease: 'none' })
-			.from('.stag1', { opacity: 0, stagger: 0.5, scale: 1.05, ease: 'in' }, '-=5')
+		tl
+			.to('#bg-1', { duration: 8, yPercent: -15, ease: 'none' })
+			.from('.stag1', { opacity: 0, stagger: 0.7, scale: 1.05, ease: 'in' }, '-=8')
 
-			.from('#bg-2', { duration: 2, opacity: 0,  ease: 'expo.out' }, '-=2')
+			.from('#bg-2', { duration: 2, opacity: 0, ease: 'expo.out' }, '-=2')
 
 			.to('#bg-2', { duration: 8, yPercent: -15, ease: 'none' }, '-=2')
 			.from('.stag2', { opacity: 0, stagger: 0.7, scale: 1.05, ease: 'in' }, '-=8')
 
-			.from('#bg-3', { duration: 2, opacity: 0, yPercent: 2, ease: 'expo.out' }, '-=2')
+			.from('#bg-3', { duration: 2, opacity: 0, ease: 'expo.out' }, '-=2')
 
 			.to('#bg-3', { duration: 8, yPercent: -15, ease: 'none' }, '-=2')
 			.from('.stag3', { opacity: 0, stagger: 0.7, scale: 1.05, ease: 'in' }, '-=8')
 
-			.from('#bg-4', { duration: 2, opacity: 0, yPercent: 2, ease: 'expo.out' }, '-=2')
+			.from('#bg-4', { duration: 2, opacity: 0, ease: 'expo.out' }, '-=2')
 
 			.to('#bg-4', { duration: 8, yPercent: -15, ease: 'none' }, '-=2')
-			.from('.stag4', { opacity: 0, stagger: 0.7, scale: 1.05, ease: 'in' }, '-=8')
-
-
+			.from('.stag4', { opacity: 0, stagger: 0.7, scale: 1.05, ease: 'in' }, '-=8');
 	});
 </script>
 
 <div class="h-[82vh] relative overflow-hidden">
+	<img
+		id="bg-1"
+		loading="lazy"
+		class="absolute object-cover w-full h-screen"
+		src="https://ik.imagekit.io/soulgenesis/showcase/desktop-bg-1.jpg"
+		alt=""
+	/>
+	{#each elements as el}
+		<img
+			class="absolute stag1"
+			id="el1-{el}"
+			src="/img/elements/Stage 1/el{el}.png"
+			alt="element"
+		/>
+	{/each}
+
 	{#each images as i, index (index)}
-		<picture>
-			<source srcset="{i}Background.webp" />
-			<img
-				id="bg-{index + 1}"
-				class="absolute object-cover w-full h-screen"
-				src="{i}Background.jpg"
-				alt=""
-			/>
-		</picture>
+		<img
+			id="bg-{index + 2}"
+			loading="lazy"
+			class="absolute object-cover w-full h-screen"
+			data-src="https://ik.imagekit.io/soulgenesis/showcase/desktop-bg-{index + 2}.jpg"
+			alt=""
+		/>
 		{#each elements as el}
-			<picture>
-				<source srcset="{i}el{el}.webp" />
-				<img
-					class="absolute stag{index + 1}"
-					id="el{index + 1}-{el}"
-					src="{i}el{el}.png"
-					alt="element"
-				/>
-			</picture>
+			<!-- <source srcset="{i}el{el}.webp" /> -->
+			<img
+				class="absolute stag{index + 2}"
+				id="el{index + 2}-{el}"
+				data-src="{i}el{el}.png"
+				alt="element"
+			/>
 		{/each}
 	{/each}
 
@@ -222,7 +239,7 @@
 			width: 17%;
 		}
 
-        /* STAGE 4 */
+		/* STAGE 4 */
 		#el4-1 {
 			bottom: 0;
 			left: 0;

@@ -1,6 +1,6 @@
 <div class="grid grid-cols-12">
 	<div class="flex md:items-center space-x-2 col-span-full mt-28 ml-4 sm:ml-6 sm:mt-40">
-		<img class="w-11 h-9 sm:w-20 sm:h-16" src="/img/icons/star.png" alt="" />
+		<img loading="lazy" class="w-11 h-9 sm:w-20 sm:h-16" src="/img/icons/star.png" alt="" />
 		<h2 class="subheading">The Soulmates<br class="md:hidden" /> community</h2>
 	</div>
 </div>
@@ -15,7 +15,7 @@
 		<p class="mt-5">We’ll tell you the details soon!</p>
 	</div>
 
-    <img class="col-span-full mt-9 px-4 sm:px-6 md:col-start-2 lg:w-[40rem]" src="/img/icons/wut.svg" alt="">
+    <img loading="lazy" class="col-span-full mt-9 px-4 sm:px-6 md:col-start-2 lg:w-[40rem]" src="/img/icons/wut.svg" alt="">
 </div>
 
 

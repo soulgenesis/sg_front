@@ -9,10 +9,10 @@
 <div class="grid grid-cols-12 mt-9 space-y-14 sm:mt-28 lg:space-y-0">
     <div class="pl-4 col-span-full md:col-start-2 md:pl-0 lg:col-start-1 lg:row-start-1 lg:pl-4">
         <h2 class="text-2xl">Simple NFT</h2>
-        <img class="mt-9 sm:mt-11 sm:w-[20.7rem]" src="/img/icons/token1.svg" alt="">
+        <img loading="lazy" class="mt-9 sm:mt-11 sm:w-[20.7rem]" src="/img/icons/token1.svg" alt="">
     </div>
     <div class="pl-4 col-span-full md:col-start-2 md:pl-0 lg:col-start-6 lg:row-start-1 xl:col-start-5 2xl:-ml-16">
         <h2 class="text-2xl">Changeable NFT</h2>
-        <img class="mt-9 sm:mt-11 sm:w-[32rem]" src="/img/icons/token2.svg" alt="">
+        <img loading="lazy" class="mt-9 sm:mt-11 sm:w-[32rem]" src="/img/icons/token2.svg" alt="">
     </div>
 </div>
