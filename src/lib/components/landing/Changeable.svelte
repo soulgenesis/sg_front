@@ -1,10 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
-	import { gsap } from 'gsap/dist/gsap.js';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger.js';
 	import { browser } from '$app/env';
 
-	gsap.registerPlugin(ScrollTrigger);
 
 	let pics = [];
 
@@ -31,6 +28,7 @@
 		});
 	};
 	onMount(async () => {
+		gsap.registerPlugin(ScrollTrigger);
 		const tl = gsap.timeline({
 			scrollTrigger: {
 				trigger: '#changeable'
