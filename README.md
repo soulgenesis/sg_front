@@ -1,41 +1,77 @@
-# create-svelte
+# Soul genesis frontend
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Stages
+- [ ] Before start
+    * Nav
+        1. Presale {date}
+        2. Remind me (presale, sale and stages?)
+        * Links
+            1. dev -> our team
+            2. art -> artist
+            3. project discord
+            4. project twitter
+---
+- [ ] Presale
+    * Nav
+        1. Presale opened!
+        * Links
+            1. \+ About
+            2. \+ FAQ?
+    * Main
+        1. Sale starts soon
+        2. Sale starts at {date}
+---
+- [ ] Sale
+---
+- [ ] Sale end
+---
+- [ ] Project stages (1..5)
 
-## Creating a project
+## Images logic
 
-If you're seeing this, you've probably already done this step. Congrats!
+ - images/
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+    - 1/
+      - 0.jpg
+      - ....
+      - 10_000.jpg
 
-# create a new project in my-app
-npm init svelte@next my-app
-```
+    - 2/
+      - 0.jpg
+      - ....
+      - 10_000.jpg
 
-> Note: the `@next` is temporary
+    - .......
 
-## Developing
+    - 5/
+      - 0.jpg
+      - ....
+      - 10_000.jpg
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+  - frozen/
+    
+    - 1/
+      - 0.jpg
+      - ....
+      - 10_000.jpg
 
-```bash
-npm run dev
+    - .......
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+    - 4/
+      - 0.jpg
+      - ....
+      - 10_000.jpg
 
-## Building
+  - fade35/
 
-To create a production version of your app:
+    - 4/
+      - 0.jpg
+      - ....
+      - 10_000.jpg
+      
+  - fade45/
 
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
-# sg_front
+    - 4/
+      - 0.jpg
+      - ....
+      - 10_000.jpg
