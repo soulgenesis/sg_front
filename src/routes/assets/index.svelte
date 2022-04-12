@@ -30,8 +30,9 @@
 		<div class="flex flex-wrap gap-20">
 			{#if userNFTS}
 				{#each userNFTS as data, index (index)}
-					<img src={data['image']} alt="" />
-                    <div>{data['edition']}</div>
+					<!-- <img src={data['image']} alt="" /> -->
+                    <div class="text-xl">{data['title']}</div>
+                    <div class="font-bold">{data['body']}</div>
 				{/each}
 			{/if}
 		</div>
