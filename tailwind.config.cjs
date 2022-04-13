@@ -16,6 +16,19 @@ module.exports = {
       backgroundImage: {
         'sky': "url('/img/bg/desktop-bg-1.jpg')",
         'sky-pink': "url('/img/bg/desktop-bg-2.jpg')",
+      },
+      keyframes: {
+        heartbeat: {
+          '0%': { transform: 'scale(1)' },
+          '2.5%': { transform: 'scale(1.06)' },
+          '5%': { transform: 'scale(1)' },
+          '7.5%': { transform: 'scale(1.06)' },
+          '10%': { transform: 'scale(1)' },
+          '100%': { transform: 'scale(1)' },
+        }
+      },
+      animation: {
+        heartbeat: "heartbeat 6s ease-in-out infinite"
       }
     },
   },

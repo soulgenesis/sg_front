@@ -12,3 +12,9 @@ export const extractImagesFromJson = async (ids) => {
         console.log("the json is: ", await res.json())
     }
 }
+
+export const redusedAddress = (addr: string) : string => {
+    const first = addr.slice(0, 6)
+    const last = addr.slice(-5)
+    return first + '...' + last
+}
