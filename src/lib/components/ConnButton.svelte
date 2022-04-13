@@ -1,16 +1,9 @@
 <script>
-	import { canConnect } from '$lib/functions/stores';
+	import { browser } from '$app/env';
+import { canConnect } from '$lib/functions/stores';
 	import { defaultEvmStores, connected } from 'svelte-web3';
-	import detectEthereumProvider from '@metamask/detect-provider'
 
-	const enableBrowser = async () => {
-		const provider = await detectEthereumProvider()
-		if (provider) {
-			defaultEvmStores.setProvider()
-		} else {
-			window.location.href = 'https://metamask.app.link/dapp/www.soulgenesis.art/'
-		}
-	}
+	const enableBrowser = () => defaultEvmStores.setProvider()
 </script>
 
 {#if $connected}
@@ -26,6 +19,10 @@
 			? 'bg-gray text-white text-center py-2.5 px-5 text-xs lg:text-base cursor-pointer font-thin'
 			: 'invisible'}
 	>
-		<button on:click={enableBrowser}>Connect wallet</button>
+		{#if browser && window.ethereum}
+			<button on:click={enableBrowser}>Connect wallet</button>
+		{:else}
+			<a href="https://metamask.app.link/dapp/www.soulgenesis.art/">Connect wallet</a>
+		{/if}
 	</div>
 {/if}
