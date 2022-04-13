@@ -15,8 +15,11 @@
 {:else}
 	<div
 		disabled={!$canConnect}
-		class={$canConnect ? "bg-gray text-white text-center py-2.5 px-5 text-xs lg:text-base cursor-pointer font-thin": "invisible"}
+		class={$canConnect
+			? 'bg-gray text-white text-center py-2.5 px-5 text-xs lg:text-base cursor-pointer font-thin'
+			: 'invisible'}
 	>
-		<button on:click={enableBrowser}>Connect wallet</button>
+		<a class="md:hidden" href="https://metamask.app.link/dapp/www.soulgenesis.art/">Connect wallet</a>
+		<button class="hidden md:inline" on:click={enableBrowser}>Connect wallet</button>
 	</div>
 {/if}
